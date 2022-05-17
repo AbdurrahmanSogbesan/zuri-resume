@@ -1,0 +1,15 @@
+.timelineContainer {
+  position: relative;
+  left: 30px;
+  width: 80%;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.timelineContainer > hr {
+  border: 1px solid #c2c2c2;
+}

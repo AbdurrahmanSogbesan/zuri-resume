@@ -1,18 +1,17 @@
 .subtitle {
-  margin-bottom: 20px;
-}
-
-.subtitle > span {
+  margin-bottom: 15px;
   padding-bottom: 8px;
+  width: 100%;
   position: relative;
+  border-bottom: 2px solid #c2c2c2;
 }
 
-.subtitle > span:before {
-  content: "";
+.subtitle :before {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  background: dodgerblue;
   height: 2px;
-  width: 40px;
-  border-bottom: 2px solid dodgerblue;
+  content: "";
+  width: 50px;
+  bottom: -2px;
+  left: 0;
 }

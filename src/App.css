@@ -3,20 +3,47 @@
 .App {
   display: flex;
   font-family: "Roboto Flex", sans-serif;
+  transition: all 1s ease;
+}
+
+.toggle {
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background: dodgerblue;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 1s ease;
+  cursor: pointer;
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 999;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle:hover {
+  color: dodgerblue;
+  background: white;
+  border: 1px solid dodgerblue;
 }
 
 .leftSection {
+  background: #174574;
+  top: 0;
+  height: 98vh;
   position: sticky;
   flex: 0.3;
-  background: #174574;
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 35px 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  padding: 35px 30px 0;
+  animation: transitionIn 1.5s;
+  padding-bottom: 35px;
 }
 
 .image {
@@ -24,7 +51,9 @@
   height: 150px;
   border-radius: 999px;
   position: relative;
-  top: 25px;
+  bottom: 114px;
+  margin: 0 auto;
+  border: 5px solid dodgerblue;
 }
 
 .introSection {
@@ -33,6 +62,8 @@
   margin-top: -35px;
   display: flex;
   background: dodgerblue;
+  clip-path: polygon(0 0%, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 120px;
   flex-direction: column;
   align-items: center;
 }
@@ -41,11 +72,20 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: -75px;
+}
+
+.skillbar {
+  margin-bottom: 8px !important;
 }
 
 .skillbar-percent {
   color: black !important;
+}
+.skillbar-bar {
+  border-radius: 0 !important;
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
 }
 
 /* .hobbySection {
@@ -62,4 +102,68 @@
 
 .rightSection {
   flex: 0.7;
+  padding: 40px 40px 20px;
+  animation: transitionIn 1.5s;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  color: #174574;
+}
+
+ul li > span {
+  color: black;
+}
+
+.rightContent {
+  margin-bottom: 15px;
+}
+
+.coverLetter {
+  animation: transitionIn 1.5s;
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+}
+
+@media (max-width: 650px) {
+  .toggle {
+    top: 10px;
+    border: 1px solid white;
+  }
+  .App {
+    flex-direction: column;
+  }
+  .leftSection {
+    height: 100%;
+    position: inherit;
+    padding-bottom: 35px;
+  }
+  .introSection {
+    padding-bottom: 145px;
+    padding-top: 45px;
+  }
+  .image {
+    position: relative;
+    bottom: 131px;
+  }
+  .skillsSection {
+    margin-top: -110px;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }

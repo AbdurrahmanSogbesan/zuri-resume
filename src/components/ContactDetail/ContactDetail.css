@@ -8,3 +8,18 @@
   flex-direction: column;
   margin-left: 12px;
 }
+
+.link {
+  color: coral;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 650px) {
+  .contactContent {
+    word-break: break-all;
+  }
+}
