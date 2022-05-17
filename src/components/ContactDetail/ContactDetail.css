@@ -1,0 +1,10 @@
+.contactDetail {
+  display: flex;
+  align-items: center;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
