@@ -39,7 +39,6 @@
   left: 0;
   width: 30%;
   position: fixed;
-  flex: 0.3;
   color: white;
   display: flex;
   flex-direction: column;
@@ -107,7 +106,6 @@
   margin-left: 35%;
   padding: 40px 40px 20px;
   animation: transitionIn 1.5s;
-  width: 100%;
 }
 
 ul {
@@ -148,10 +146,14 @@ ul li > span {
   .leftSection {
     height: 100%;
     position: inherit;
+    left: unset;
     padding-bottom: 35px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
+    top: unset;
+    bottom: unset;
+    left: unset;
   }
   .introSection {
     padding-bottom: 145px;
@@ -167,6 +169,7 @@ ul li > span {
   }
   .rightSection {
     margin-left: 0;
+    width: fit-content;
   }
 }
 
