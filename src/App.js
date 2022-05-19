@@ -18,7 +18,7 @@ function App() {
   ];
 
   const colors = {
-    bar: "#6dab60",
+    bar: "#3498db",
     title: {
       text: "white",
       background: "dodgerblue",
@@ -128,7 +128,7 @@ function App() {
             <Subtitle text="Professional Skills" />
             <SkillBar
               skills={skills}
-              height={30}
+              height={20}
               colors={colors}
               animationDelay={0}
               animationDuration={2000}
@@ -177,10 +177,32 @@ function App() {
 
   const renderLetter = () => (
     <div className="coverLetter">
-      <Text text="Dear John Doe," />
+      <Text
+        text="Application for the role of Frontend Developer"
+        textAlign="center"
+        fontSize={25}
+        fontWeight="bold"
+      />
       <br />
-      <Text text="As a passionate Developer and long-time fan of XYZ Company, I was elated to see an opening for a Junior Web Developer role. I have experience in HTML, CSS, and JavaScript. Combined with my recent internship in front-end web development, I am confident I have the skills to help XYZ Company succeed." />
-      <Text text="During my internship with 123 Technologies, I gained hands-on experience coding websites and applications. One of my projects was developing a web-based application for an event management client using React and Material-UI. The app helped increase their event signups by 40%. Through my internship, I also gained valuable teamwork and communication skills that will make me a great asset to XYZ Company." />
+      <Text text="Dear Hiring Manager," fontSize={20} />
+      <br />
+      <Text
+        text="As a passionate Developer and long-time fan of this company, I was elated to see an opening for a Front End Web Developer role. I have experience in HTML, CSS and JavaScript(React, Vue). Combined with my recent internship in front-end web development, I am confident I have the skills to help this company succeed."
+        fontSize={20}
+        lineHeight={25}
+      />
+      <br />
+      <Text
+        text="During my internship with Pramie Technologies, I gained hands-on experience coding websites and applications. One of my responsibilities was developing components and pages for a virtual office assistant software using React. Through my internship, I also gained valuable teamwork and communication skills that will make me a great asset to your company."
+        fontSize={20}
+        lineHeight={25}
+      />
+      <Text
+        text="Thank you for taking the time to review my qualifications. I look forward to sharing more about my skills and experiences. Feel free to contact me at +2348184041848 or abdurrahman0803@gmail.com."
+        fontSize={20}
+        lineHeight={25}
+      />
+      <Text text="Best Regards, Abdurrahman" fontSize={20} lineHeight={25} />
     </div>
   );
 
@@ -190,7 +212,7 @@ function App() {
   return (
     <div className="App">
       <button className="toggle" onClick={toggleMode}>
-        Toggle Mode: {resumeMode ? "Resume" : "Cover Letter"}
+        Toggle: {resumeMode ? "Resume" : "Cover Letter"}
       </button>
       {resumeMode ? renderResume() : renderLetter()}
     </div>

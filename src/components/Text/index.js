@@ -1,7 +1,7 @@
 import React from "react";
 import "./Text.css";
 
-function Text({ text, color, fontSize, fontWeight, textAlign }) {
+function Text({ text, color, fontSize, fontWeight, textAlign, lineHeight }) {
   return (
     <span
       className="text"
@@ -10,6 +10,7 @@ function Text({ text, color, fontSize, fontWeight, textAlign }) {
         fontSize: `${fontSize}px`,
         fontWeight: `${fontWeight}`,
         textAlign: `${textAlign}`,
+        lineHeight: `${lineHeight}px`,
       }}
     >
       {text}

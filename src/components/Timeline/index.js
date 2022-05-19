@@ -7,7 +7,7 @@ function Timeline({ name, date, content }) {
     <div className="timelineContainer">
       <div className="timeline">
         <Text text={date} fontSize={20} />
-        <Text text={name} fontSize={18} fontWeight="bold" />
+        <Text color="#174574" text={name} fontSize={18} fontWeight="bold" />
         <Text text={content} />
       </div>
       <hr />
