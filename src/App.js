@@ -5,6 +5,10 @@ import SkillBar from "react-skillbars";
 import ContactDetail from "./components/ContactDetail";
 import Timeline from "./components/Timeline";
 import { useState } from "react";
+import Hobbies from "./components/Hobbies";
+import SoccerGIF from "../src/images/soccer.gif";
+import MusicGIF from "../src/images/music.gif";
+import GameGIF from "../src/images/game.gif";
 
 function App() {
   const [resumeMode, setResumeMode] = useState(true);
@@ -25,7 +29,26 @@ function App() {
     },
   };
 
-  const hobbies = ["Sports", "Music", "Gaming"];
+  const hobbies = [
+    {
+      name: "Sports",
+      description:
+        "I enjoy playing and watching various sports, the most of which is football.",
+      image: SoccerGIF,
+    },
+    {
+      name: "Music",
+      description:
+        "Music is life. Life is music. I listen to music quite a lot, as it relaxes me.",
+      image: MusicGIF,
+    },
+    {
+      name: "Gaming",
+      description:
+        "I've always enjoyed playing games. I guess I just stuck with it.",
+      image: GameGIF,
+    },
+  ];
 
   const contactDetails = [
     {
@@ -162,9 +185,13 @@ function App() {
             <li className="rightContent">
               <Subtitle text="Hobbies" fontSize={25} />
               <ul className="hobbyList">
-                {hobbies.map((text, index) => (
+                {hobbies.map((hobby, index) => (
                   <li key={index}>
-                    <Text text={text} fontSize={20} />
+                    <Hobbies
+                      name={hobby.name}
+                      description={hobby.description}
+                      image={hobby.image}
+                    />
                   </li>
                 ))}
               </ul>
@@ -197,11 +224,13 @@ function App() {
         fontSize={20}
         lineHeight={25}
       />
+      <br />
       <Text
         text="Thank you for taking the time to review my qualifications. I look forward to sharing more about my skills and experiences. Feel free to contact me at +2348184041848 or abdurrahman0803@gmail.com."
         fontSize={20}
         lineHeight={25}
       />
+      <br />
       <Text text="Best Regards, Abdurrahman" fontSize={20} lineHeight={25} />
     </div>
   );
