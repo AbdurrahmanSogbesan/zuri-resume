@@ -16,7 +16,7 @@ function Modal(props) {
     return function cleanup() {
       document.body.removeEventListener("keydown", closeOnEscapeKeyDown);
     };
-  }, []);
+  });
 
   return (
     <CSSTransition
