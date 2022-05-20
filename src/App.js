@@ -85,7 +85,7 @@ function App() {
         {
           date: "2019 - Present",
           name: "University of Lagos, Lagos — Bachelor's Degree",
-          content: "Bachelors of Science - Computer Science - 4.4 CGPA",
+          content: ["Bachelors of Science - Computer Science - 4.4 CGPA"],
         },
       ],
     },
@@ -95,20 +95,28 @@ function App() {
         {
           date: "01 - 2022 - Present",
           name: "Pramie Technologies — Front End Software Developer",
-          content:
-            "I built the web components of a virtual office assistant software with a dedicated team of front end and back end developers,integrated APIs for pages and authentication flows on a NextJS web application and worked on navigation bug fixes on an existing SaaS website.",
+          content: [
+            "Successfully built the web components of a virtual office assistant software with a dedicated team of front end and back end developers.",
+            "Integrated APIs for pages and authentication flows on a NextJS web application.",
+            "Worked on navigation bug fixes on an existing SaaS website.",
+          ],
         },
         {
           date: "12 - 2021 - Present",
           name: "Freelance — Front End Software Developer",
-          content:
-            "Built a portfolio site, integrating real-time CRM using firebase with GatsbyJS. Created fully functional, mobile-responsive web applications.Implemented authentication on an open-source watermarking tool built with React.Built a simple carts page with React and Formspree for a vendor of drinks to enable real-time notifications on customer orders.",
+          content: [
+            "Built a portfolio site, integrating real-time CRM using firebase with GatsbyJS.",
+            "Created fully functional, mobile-responsive web applications.",
+            "Implemented authentication on an open-source watermarking tool built with React.",
+            "Built a simple carts page with React and Formspree for a vendor of drinks to enable real-time notifications on customer orders ",
+          ],
         },
         {
           date: "10 - 2021 - 12 - 2021",
           name: "Side hustle Internship — Front End Software Developer",
-          content:
+          content: [
             "Collaborated with sub-teams of developers and designers to build functional and scalable web apps.",
+          ],
         },
       ],
     },

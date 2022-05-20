@@ -8,7 +8,13 @@ function Timeline({ name, date, content }) {
       <div className="timeline">
         <Text text={date} fontSize={20} />
         <Text color="#174574" text={name} fontSize={18} fontWeight="bold" />
-        <Text text={content} />
+        <ul className="timelineListContainer">
+          {content.map((c) => (
+            <li className="timelineList">
+              <Text text={c} fontSize={18} />
+            </li>
+          ))}
+        </ul>
       </div>
       <hr />
     </div>
