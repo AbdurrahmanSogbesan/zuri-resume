@@ -190,10 +190,7 @@ function App() {
                     <Hobbies
                       name={hobby.name}
                       description={hobby.description}
-                      image={
-                        hobby.image ||
-                        "https://cdn.shopify.com/s/files/1/0506/0316/3824/t/6/assets/placeholder_2048x.png?v=113555733946226816651623079373"
-                      }
+                      image={hobby.image}
                     />
                   </li>
                 ))}
