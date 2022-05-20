@@ -151,7 +151,7 @@ function App() {
             <Subtitle text="Professional Skills" />
             <SkillBar
               skills={skills}
-              height={20}
+              height={22}
               colors={colors}
               animationDelay={0}
               animationDuration={2000}
@@ -241,7 +241,7 @@ function App() {
   return (
     <div className="App">
       <button className="toggle" onClick={toggleMode}>
-        Toggle: {resumeMode ? "Resume" : "Cover Letter"}
+        Show {resumeMode ? "Cover Letter" : "Resume"}
       </button>
       {resumeMode ? renderResume() : renderLetter()}
     </div>
