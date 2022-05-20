@@ -6,7 +6,7 @@ function Timeline({ name, date, content }) {
   return (
     <div className="timelineContainer">
       <div className="timeline">
-        <Text text={date} fontSize={20} />
+        <Text text={date} fontSize={20} className="timelineDate" />
         <Text color="#174574" text={name} fontSize={18} fontWeight="bold" />
         <ul className="timelineListContainer">
           {content.map((c) => (

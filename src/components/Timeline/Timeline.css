@@ -10,6 +10,10 @@
   margin-bottom: 15px;
 }
 
+.timelineDate {
+  margin-bottom: 10px;
+}
+
 .timelineContainer > hr {
   border: 1px solid #c2c2c2;
 }

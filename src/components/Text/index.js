@@ -10,10 +10,11 @@ function Text({
   lineHeight,
   onClick,
   cursor,
+  className,
 }) {
   return (
     <span
-      className="text"
+      className={`text ${className}`}
       style={{
         color: `${color}`,
         fontSize: `${fontSize}px`,
