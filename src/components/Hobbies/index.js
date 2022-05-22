@@ -12,6 +12,7 @@ function Hobbies({ name, description, image }) {
         onClick={() => setShow(true)}
         cursor="pointer"
         fontSize={20}
+        fontWeight={500}
       />
       <Modal title={name} show={show} onClose={() => setShow(false)}>
         <Text text={description} />

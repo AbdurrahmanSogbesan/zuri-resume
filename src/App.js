@@ -239,7 +239,7 @@ function App() {
       />
       <br />
       <Text
-        text="During this internship, I have played a valuable role in writing codes for the websites and applications the company builds. More specifically, I was in charge of developing components and pages for a virtual office assistant software using React. This internship has also opened my eyes to the importance of teamwork and clear communication, skills I continue to polish during my time with the team."
+        text="During this internship, I have played a valuable role in writing code for the websites and applications the company builds. More specifically, I was in charge of developing components and pages for a virtual office assistant software using React. This internship has also opened my eyes to the importance of teamwork and clear communication, skills I continue to polish during my time with the team."
         lineHeight={25}
       />
       <br />
