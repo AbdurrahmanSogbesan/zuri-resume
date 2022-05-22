@@ -44,7 +44,7 @@ function App() {
     },
     {
       name: "Gaming",
-      description: "I play games quite a bit, especially video games.",
+      description: "I play games quite a lot, especially video games.",
       image: GameGIF,
     },
   ];
