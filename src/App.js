@@ -151,7 +151,7 @@ function App() {
           </div>
           <img
             className="image"
-            src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-42916.appspot.com/o/profile%20pic%2FScreenshot%202022-05-22%20at%2019.22.42.png?alt=media&token=bbbf57c0-b903-43bc-934b-969c65534571"
             alt="My face"
           />
           <div className="skillsSection">
