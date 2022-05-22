@@ -33,7 +33,7 @@ function App() {
     {
       name: "Sports",
       description:
-        "I enjoy playing and watching various sports, the most of which is football.",
+        "I enjoy playing and watching various sports, especially football.",
       image: SoccerGIF,
     },
     {
@@ -44,8 +44,7 @@ function App() {
     },
     {
       name: "Gaming",
-      description:
-        "I've always enjoyed playing games. I guess I just stuck with it.",
+      description: "I play games quite a bit, especially video games.",
       image: GameGIF,
     },
   ];
@@ -77,7 +76,7 @@ function App() {
   const rightContents = [
     {
       title: "Career Objective",
-      text: "Front End Developer with a passion for creating intuitive, dynamic user experiences using brilliant UI effects and animations. My end goal for every project is to deliver a resilient, scalable, and secure web app that delights end-users",
+      text: "Front-end Developer with a passion for creating intuitive, dynamic user experiences using brilliant UI effects and animations. My end goal for every project is to deliver a resilient, scalable, and secure web app that delights end-users",
     },
     {
       title: "Education",
@@ -94,16 +93,16 @@ function App() {
       timeline: [
         {
           date: "01 - 2022 - Present",
-          name: "Pramie Technologies — Front End Software Developer",
+          name: "Pramie Technologies — Front-end Software Developer",
           content: [
-            "Successfully built the web components of a virtual office assistant software with a dedicated team of front end and back end developers.",
+            "Successfully built the web components of a virtual office assistant software with a dedicated team of front-end and back end developers.",
             "Integrated APIs for pages and authentication flows on a NextJS web application.",
             "Worked on navigation bug fixes on an existing SaaS website.",
           ],
         },
         {
           date: "12 - 2021 - Present",
-          name: "Freelance — Front End Software Developer",
+          name: "Freelance — Front-end Software Developer",
           content: [
             "Built a portfolio site, integrating real-time CRM using firebase with GatsbyJS.",
             "Created fully functional, mobile-responsive web applications.",
@@ -113,7 +112,7 @@ function App() {
         },
         {
           date: "10 - 2021 - 12 - 2021",
-          name: "Side hustle Internship — Front End Software Developer",
+          name: "Side hustle Internship — Front-end Software Developer",
           content: [
             "Collaborated with sub-teams of developers and designers to build functional and scalable web apps.",
           ],
@@ -144,7 +143,7 @@ function App() {
               textAlign="center"
             />
             <Text
-              text="Front End Developer"
+              text="Front-end Developer"
               fontSize={20}
               fontWeight="normal"
               textAlign="center"
@@ -212,34 +211,56 @@ function App() {
 
   const renderLetter = () => (
     <div className="coverLetter">
+      <Text text="Abdurrahman Sogbesan" fontSize={25} textAlign="center" />
       <Text
-        text="Application for the role of Frontend Developer"
+        text="26 Kaltungo Street, Garki 2, Abuja"
+        fontSize={14}
         textAlign="center"
-        fontSize={25}
+      />
+      <Text text="abdurrahman0803@gmail.com" fontSize={14} textAlign="center" />
+      <Text text="+2348184041848" fontSize={14} textAlign="center" />
+      <Text text="May 22, 2022" />
+      <Text text="Dear Hiring Manager," />
+      <br />
+      <Text
+        text="Application for the role of Front-end Developer"
+        textAlign="center"
         fontWeight="bold"
       />
       <br />
-      <Text text="Dear Hiring Manager," fontSize={20} />
-      <br />
       <Text
-        text="As a passionate Developer and long-time fan of this company, I was elated to see an opening for a Front End Web Developer role. I have experience in HTML, CSS and JavaScript(React, Vue). Combined with my recent internship in front-end web development, I am confident I have the skills to help this company succeed."
-        fontSize={20}
+        text="I am a passionate and emerging front-end developer, who was elated to read about an employment opportunity at your organisation. As a result, I am thrilled to apply for the position of Front-end Web Developer at your company."
         lineHeight={25}
       />
       <br />
       <Text
-        text="During my internship with Pramie Technologies, I gained hands-on experience coding websites and applications. One of my responsibilities was developing components and pages for a virtual office assistant software using React. Through my internship, I also gained valuable teamwork and communication skills that will make me a great asset to your company."
-        fontSize={20}
+        text="I have spent the past year and a half honing my skills in HTML, CSS and Javascript (React), while pursuing a degree in computer science at the University of Lagos. Most recently, I have put those skills to work during my ongoing internship with Pramie Technologies, where I gained hands-on experience as I worked alongside a team of talented developers."
         lineHeight={25}
       />
       <br />
       <Text
-        text="Thank you for taking the time to review my qualifications. I look forward to sharing more about my skills and experiences. Feel free to contact me at +2348184041848 or abdurrahman0803@gmail.com."
-        fontSize={20}
+        text="During this internship, I have played a valuable role in writing codes for the websites and applications the company builds. More specifically, I was in charge of developing components and pages for a virtual office assistant software using React. This internship has also opened my eyes to the importance of teamwork and clear communication, skills I continue to polish during my time with the team."
         lineHeight={25}
       />
       <br />
-      <Text text="Best Regards, Abdurrahman" fontSize={20} lineHeight={25} />
+      <Text
+        text="In addition to my abilities as a developer, I am also a curious person who is always looking to learn and take initiative. This is why I have combined internships and other practical opportunities with my university education. It has enriched my thinking and approach as a developer and student."
+        lineHeight={25}
+      />
+      <br />
+      <Text
+        text="I have no doubt that I possess skills and experiences that would be valuable to your organisation. I am also excited at the prospect of working with you to meet the goals and missions of your company."
+        lineHeight={25}
+      />
+      <br />
+      <Text
+        text="Thank you very much for taking the time to consider my application. I look forward to talking to you about why I am the perfect fit for this role."
+        lineHeight={25}
+      />
+      <br />
+      <Text text="Sincerely," lineHeight={25} />
+      <Text text="Abdurrahman Sogbesan." lineHeight={25} />
+      <br />
     </div>
   );
 
